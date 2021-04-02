@@ -1,6 +1,8 @@
 # BluuUEFILib
 Some barebones UEFI stuff, designed to get you booted and nothing more.
 
+You can ignore LoaderMain.c, it's an example to show how it might be used
+
 # How To Use:
 1. Download the code <br>
 2. cd into the source directory and run make
