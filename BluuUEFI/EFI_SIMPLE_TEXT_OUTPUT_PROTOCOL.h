@@ -1,7 +1,5 @@
 #pragma once
-#define EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL_GUID \
-{0x387477c2,0x69c7,0x11d2,\
-{0x8e,0x39,0x00,0xa0,0xc9,0x69,0x72,0x3b}}
+#define EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL_GUID {0x387477c2,0x69c7,0x11d2,{0x8e,0x39,0x00,0xa0,0xc9,0x69,0x72,0x3b}}
 
 #define EFI_BLACK                            0x00
 #define EFI_BLUE                             0x01
@@ -46,12 +44,12 @@ typedef EFI_STATUS(EFIAPI* EFI_TEXT_SET_CURSOR_POSITION) (IN struct _EFI_SIMPLE_
 typedef EFI_STATUS(EFIAPI* EFI_TEXT_ENABLE_CURSOR) (IN struct _EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL* This, IN BOOLEAN                         Visible);
 
 typedef struct {
-	INT32               MaxMode; 
-	// current settings  
-	INT32               Mode; 
-	INT32               Attribute; 
-	INT32               CursorColumn; 
-	INT32               CursorRow; 
+	INT32               MaxMode;
+	// current settings
+	INT32               Mode;
+	INT32               Attribute;
+	INT32               CursorColumn;
+	INT32               CursorRow;
 	BOOLEAN             CursorVisible;
 } SIMPLE_TEXT_OUTPUT_MODE;
 
